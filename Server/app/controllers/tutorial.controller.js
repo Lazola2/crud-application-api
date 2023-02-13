@@ -1,5 +1,5 @@
 // create the controller
-const db = require('../models');
+const db = require('../models/db');
 const Tutorial = db.tutorials;
 const Op = db.Sequelize.Op;
 
