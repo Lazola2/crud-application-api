@@ -1,7 +1,7 @@
 // configure MySQL database
 require("dotenv").config()
 module.exports = {
-    HOST: process.env.HOST,
+    HOST: 'btonkdomiqqxrinlfjgs-mysql.services.clever-cloud.com',
     USER: process.env.USER,
     PASSWORD: process.env.PASSWORD,
     DB: process.env.DB,
