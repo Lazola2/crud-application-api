@@ -1,14 +1,11 @@
-// create the controller
-const db = require('../models/db');
-const Tutorial = db.tutorials;
-const Op = db.Sequelize.Op;
+const Tutorial = require('../models/tutorial.model');
 
 // create and save a new tutorial
 exports.create = (req, res) => {
-    
+
 };
 
-// retrieve all tutorials from the database
+// retrieve all tutorials from the database (with condition).
 exports.findAll = (req, res) => {
 
 };
@@ -16,21 +13,19 @@ exports.findAll = (req, res) => {
 // find a single tutorial with an id
 exports.findOne = (req, res) => {
 
-};
+}
 
-// update a tutorial by the id int  the request
-exports.update = (req, res) => {
+// find all published tutorial with an id
+exports.findAllPublished = (req, res) => {
 
 }
 
-// delete a tutorial with the specified id in the request
+// update a tutorial identified by the id int the request
 exports.delete = (req, res) => {
 
 };
 
-// find all published tutorials
-exports.findAllPublished = (req, res) => {
+// delete all tutorials from the database.
+exports.deleteAll = (req, res) => {
 
 };
-
-

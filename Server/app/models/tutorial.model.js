@@ -105,7 +105,7 @@ Tutorial.updateById = (id, tutorial, result) => {
 };
 
 // delete tutorial
-Tutorial.delete = (id, result) => {
+Tutorial.remove = (id, result) => {
     sql.query('DELETE FROM tutorials WHERE id = ?', id, (err, res) => {
         if (err) {
             console.log('error: ', err);
@@ -125,7 +125,7 @@ Tutorial.delete = (id, result) => {
 };
 
 // delete all tutorials
-Tutorial.deleteAll = result => {
+Tutorial.removeAll = (result) => {
     sql.query('DELETE FROM tutorials', (err, res) => {
         if (err) {
             console.log('error: ', err);
@@ -136,6 +136,7 @@ Tutorial.deleteAll = result => {
         result(null, res);
     });
 };
+
 module.exports = Tutorial;
 
 
